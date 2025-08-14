@@ -171,4 +171,4 @@ awards:
 
 ## About Me
 
-I study 
+I study how people communicate during difficult, emotionally salient events. 
