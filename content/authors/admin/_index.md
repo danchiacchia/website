@@ -31,17 +31,13 @@ profiles:
     url: 'mailto:daniel.chiacchia@rotman.utoronto.ca'
     label: Email me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://x.com/danielchiacchia
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: www.linkedin.com/in/daniel-chiacchia-184b93140
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://scholar.google.com/citations?user=IxM7NtMAAAAJ&hl=en
+  - icon: academicons/osf
+    url: https://osf.io/mspu4/
 
 interests:
   - Artificial Intelligence
