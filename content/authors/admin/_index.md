@@ -2,16 +2,13 @@
 # Display name
 title: Daniel J. Chiacchia
 
-# Name pronunciation (optional)
-name_pronunciation: Daniel J. Chiacchia
-
 # Full name (for SEO)
 first_name: Daniel J. 
 last_name: Chiacchia
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
