@@ -3,22 +3,18 @@
 :root {
   --avatar-size: 520px;
 }
-/* ---------- HERO EDUCATION LAYOUT TWEAKS ---------- */
+/* -------- Bigger avatar on landing page -------- */
 
-/*  ❶ Keep icon + text on one line and let text use the full width  */
-#hero .education .row {
-  flex-wrap: nowrap;       /* stops early wrapping                 */
-}
-#hero .education .row .col {
-  max-width: 100%;         /* text column may grow as wide as needed*/
+/* Preferred way: theme respects --avatar-size */
+:root {
+  --avatar-size: 220px;          /* change just this number */
 }
 
-/*  ❷ Add space between successive education rows                   */
-#hero .education .row:not(:last-child) {
-  margin-bottom: 0.75rem;  /* tweak this value until it feels right */
+/* Fallback for older/stripped-down builds */
+.portrait,
+.avatar,
+.avatar img {
+  width: 220px !important;       /* keep in sync with above */
+  height: 220px !important;
 }
 
-/*  ❸ Loosen line height inside each entry (helps multi-line degrees) */
-#hero .education .row .col {
-  line-height: 1.45;
-}
