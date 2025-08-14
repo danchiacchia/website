@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: '#004990'
+  color: orange
 
 # SEO
 marketing:
