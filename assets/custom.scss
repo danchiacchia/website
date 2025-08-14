@@ -3,3 +3,22 @@
 :root {
   --avatar-size: 520px;
 }
+/* ---------- HERO EDUCATION LAYOUT TWEAKS ---------- */
+
+/*  ❶ Keep icon + text on one line and let text use the full width  */
+#hero .education .row {
+  flex-wrap: nowrap;       /* stops early wrapping                 */
+}
+#hero .education .row .col {
+  max-width: 100%;         /* text column may grow as wide as needed*/
+}
+
+/*  ❷ Add space between successive education rows                   */
+#hero .education .row:not(:last-child) {
+  margin-bottom: 0.75rem;  /* tweak this value until it feels right */
+}
+
+/*  ❸ Loosen line height inside each entry (helps multi-line degrees) */
+#hero .education .row .col {
+  line-height: 1.45;
+}
