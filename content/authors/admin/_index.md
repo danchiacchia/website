@@ -39,11 +39,6 @@ profiles:
   - icon: academicons/osf
     url: https://osf.io/mspu4/
 
-interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
-
 education:
   - area: PhD, Organizational Behaviour and Human Resource Management (Expected 2026)
     institution: University of Toronto
