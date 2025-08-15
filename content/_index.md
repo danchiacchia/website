@@ -32,10 +32,10 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: 'My Research'
+      title: 'I draw on social psychological and micro-organizational behavior theory that emphasizes the impact of emotions, norms, and authenticity on individual and dyadic behavior'
       subtitle: ''
       text: |-
-        I draw on social psychological and micro-organizational behavior theory that emphasizes the impact of emotions, norms, and authenticity on individual and dyadic behavior. My multi-method approach – including qualitative interviews, lab and field experiments, archival analyses, and advanced statistical techniques such as psychometric natural language processing – allows me to capture nuanced expressions at scale. My work is highly interdisciplinary, contributing to fields spanning organizational behavior, psychology, marketing, communication, and health, with practical implications for improving how leaders and coworkers guide each other through organizational challenges. In addition, I am committed to open science: pre-registering studies, powering experiments appropriately, internally replicating effects, and making my data, code, and stimuli publicly available. 
+        My multi-method approach – including qualitative interviews, lab and field experiments, archival analyses, and advanced statistical techniques such as psychometric natural language processing – allows me to capture nuanced expressions at scale. My work is highly interdisciplinary, contributing to fields spanning organizational behavior, psychology, marketing, communication, and health, with practical implications for improving how leaders and coworkers guide each other through organizational challenges. In addition, I am committed to open science: pre-registering studies, powering experiments appropriately, internally replicating effects, and making my data, code, and stimuli publicly available. 
     design:
       columns: '1'
       css_class: wider
