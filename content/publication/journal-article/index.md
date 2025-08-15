@@ -8,7 +8,7 @@ authors:
 - George Newman
 author_notes:
 
-date: ""
+date: "2025-08-14T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -57,7 +57,6 @@ abstract: >-
 summary: 
 
 tags:
-- Source Themes
 featured: true
 
 # links:
@@ -92,6 +91,6 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
