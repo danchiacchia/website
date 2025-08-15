@@ -2,10 +2,12 @@
 title: "An example journal article"
 authors:
 - admin
-- Robert Ford
+- Rachel L. Ruttan
+- Katy DeCelles
+- Sora Jun
+- George Newman
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
+
 date: "2015-09-01T00:00:00Z"
 doi: ""
 
@@ -21,20 +23,21 @@ publication_types: ["article-journal"]
 publication: "*Journal of Source Themes, 1*(1)"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: My job market paper, “Sympathy Expressions Are Less Effective When They Focus on the Silver Lining,” unpacks a paradox of communication whereby the most compassionate individuals may be the most likely to adopt communication strategies that backfire. Integrating insights from emotional labor theory (Hochschild, 1983) and the interpersonal process of compassion (Dutton et al., 2014), I argue that well-intentioned individuals, driven by heightened feelings of compassion, often try to alleviate another’s distress. In so doing, they attempt to comfort others by redirecting their attention to the potential positive aspects or benefits of their situation (e.g., “Look on the bright side…”). However, this seemingly supportive strategy unintentionally pressures recipients to engage in surface acting, compelling them to mask their genuine emotional experiences. This has important downstream consequences: silver lining expressions undermine one’s authentic emotional processing, producing poorer relational (e.g., less perceived supervisor support) and psychological (e.g., greater distress) outcomes. Across several studies – including an archival analysis of 600 sympathy cards, observational data from over 1,000 interactions, and lab experiments involving 500 grieving individuals – I consistently find robust support for this paradox. By unpacking the black box of expressions of sympathy, my job market paper contributes to the literature by challenging the assumption that ‘anything is good’ when it comes to compassionate action, revealing how well-intentioned strategies can produce unintended harm. It also highlights a selection paradox: organizations may choose the most compassionate individuals to deliver bad news or to comfort, even though their conversational strategies may be less effective. In ongoing work, I am extending this work to medical contexts, examining whether felt compassion predicts the provision of false hope during the delivery of life altering medical diagnoses, and whether organizations systematically select such communicators to deliver the news, despite the ethical and relational costs of doing so. 
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: 
 
 tags:
 - Source Themes
-featured: false
+featured: true
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: ''
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''

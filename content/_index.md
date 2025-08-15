@@ -42,7 +42,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Ongoing Projects
       filters:
         folders:
           - publication
