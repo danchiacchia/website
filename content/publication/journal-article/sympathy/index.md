@@ -4,9 +4,9 @@ title: "Sympathy Expressions Are Less Effective When They Focus on the Silver
 authors:
 - admin
 - Rachel L. Ruttan
-- Katy DeCelles
+- Katy A. DeCelles
 - Sora Jun
-- George Newman
+- George E. Newman
 author_notes:
 
 date: "2025-08-14T00:00:00Z"
