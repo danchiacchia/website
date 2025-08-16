@@ -1,5 +1,6 @@
 ---
-title: "Job Market Paper"
+title: "Sympathy Expressions Are Less Effective When They Focus on the Silver
+  Lining"
 authors:
 - admin
 - Rachel L. Ruttan
