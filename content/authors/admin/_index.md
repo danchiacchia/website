@@ -33,7 +33,7 @@ profiles:
   - icon: brands/x
     url: https://x.com/danielchiacchia
   - icon: brands/linkedin
-    url: www.linkedin.com/in/daniel-chiacchia-184b93140
+    url: https://www.linkedin.com/in/daniel-chiacchia-184b93140/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=IxM7NtMAAAAJ&hl=en
   - icon: academicons/osf
@@ -96,14 +96,6 @@ skills:
         description: ''
         percent: 80
         icon: camera
-
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
