@@ -39,7 +39,7 @@ sections:
     design:
       columns: '1'
       css_class: wider
-    - block: collection
+  - block: collection
     content:
       title: Recent Publications
       text: ""
