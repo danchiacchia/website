@@ -39,6 +39,16 @@ sections:
     design:
       columns: '1'
       css_class: wider
+    - block: collection
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+        tag: published
+        exclude_featured: false
+    design:
+      view: citation
   - block: collection
     id: papers
     content:
@@ -50,16 +60,6 @@ sections:
     design:
       view: article-grid
       columns: 3
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ""
-      filters:
-        folders:
-        tag: published
-        exclude_featured: false
-    design:
-      view: citation
   - block: collection
     id: talks
     content:
