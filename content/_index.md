@@ -56,7 +56,7 @@ sections:
       text: ""
       filters:
         folders:
-          - published/published
+          - publication/published
         exclude_featured: false
     design:
       view: citation
