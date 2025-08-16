@@ -8,7 +8,7 @@ authors:
 
 author_notes:
 
-date: "2025-08-14T00:00:00Z"
+date: "2025-08-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -28,7 +28,7 @@ abstract: >-
 
   Building on Conservation of Resources Theory (Hobfoll, 1989) and Event Systems Theory (Morgeson et al., 2015), I introduce a novel conceptual framework that differentiates resilience messages along two theoretically grounded dimensions: (1) Locus of Support – the extent to which resilience messages emphasize internal resources (e.g., self-reliance, personal strength) versus external resources (e.g., community, institutional support), and (2) Change Orientation – the degree to which messages encourage actively changing negative emotional states (e.g., optimism, positive reframing) or focus on validating existing emotional experiences (e.g., normalizing distress). 
   Using archival analysis of leader communications during national tragedies (e.g., presidential addresses) and controlled experiments manipulating message types, I test how these dimensions interact with crisis characteristics (severity, controllability, duration) to shape follower resilience. In doing so, my research enriches resilience and leadership scholarship by elucidating precisely how leader language shapes follower resilience. Practically, this research equips organizational leaders with actionable insights for effectively communicating during adversity, enabling them to foster resilience, facilitate recovery, and promote collective growth.
-  
+
   In the future, I plan to scale this work to organizational field settings, partnering with firms undergoing planned change (e.g., mergers) and crisis recovery (e.g., large-scale layoffs). These collaborations will allow me to experimentally vary leader message types in real-world communications – such as CEO town halls, email announcements, and team briefings – and track employee outcomes over time, including perceived support, trust, retention, and adaptive performance. 
   
 
