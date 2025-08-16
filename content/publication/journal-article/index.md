@@ -93,5 +93,9 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
+
+_build:
+  list: false      # ← don’t show in section/taxonomy lists
+  render: true 
 ---
 
