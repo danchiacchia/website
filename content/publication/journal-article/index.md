@@ -85,7 +85,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: ["silver-lining"]
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -94,8 +94,5 @@ projects: ["silver-lining"]
 #   Otherwise, set `slides: ""`.
 slides: ""
 
-_build:
-  list: false      # ← don’t show in section/taxonomy lists
-  render: true 
 ---
 
