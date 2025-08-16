@@ -33,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'Lay Theories of Decision Conflict Final.pdf'
+url_pdf: '/published/LayTheoriesofDecisionConflictFinal.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
