@@ -1,10 +1,18 @@
 
 <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated stacked peaks">
-  <rect width="800" height="400" fill="white"/>
-
-  <!-- Back peaks -->
+  <!-- Back peaks: reaches the very top so there's no empty whitespace -->
   <g fill="#004990" opacity="0.35">
-    <path d="M0 350 L200 200 L400 350 L600 250 L800 350 L800 400 L0 400 Z"/>
+    <path d="M0 0
+             L100 60
+             L200 10
+             L300 80
+             L400 20
+             L500 70
+             L600 15
+             L700 55
+             L800 30
+             L800 400
+             L0 400 Z"/>
     <animateTransform attributeName="transform"
                       type="translate"
                       dur="18s"
@@ -14,7 +22,18 @@
 
   <!-- Mid peaks -->
   <g fill="#004990" opacity="0.55">
-    <path d="M0 370 L150 250 L300 370 L450 300 L600 370 L800 270 L800 400 L0 400 Z"/>
+    <path d="M0 40
+             L90 110
+             L180 50
+             L270 140
+             L360 80
+             L450 130
+             L540 60
+             L630 120
+             L720 75
+             L800 100
+             L800 400
+             L0 400 Z"/>
     <animateTransform attributeName="transform"
                       type="translate"
                       dur="14s"
@@ -24,7 +43,19 @@
 
   <!-- Front peaks -->
   <g fill="#004990" opacity="0.9">
-    <path d="M0 400 L100 300 L200 400 L300 320 L400 400 L500 340 L600 400 L800 330 L800 400 L0 400 Z"/>
+    <path d="M0 80
+             L80 170
+             L160 90
+             L240 190
+             L320 120
+             L400 200
+             L480 140
+             L560 210
+             L640 150
+             L720 225
+             L800 180
+             L800 400
+             L0 400 Z"/>
     <animateTransform attributeName="transform"
                       type="translate"
                       dur="10s"

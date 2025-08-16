@@ -129,10 +129,6 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-<span style="color:#000"> 
-
 ## I study how people communicate during difficult, emotionally salient events.
 
 Navigating emotionally salient events, such as laying off an employee, denying a promotion, or comforting a grieving colleague, is an inevitable part of organizational life. On the surface, it may seem that words are inconsequential in these moments; indeed, no special phrase can reverse a loss or hardship. Yet, my work reveals that what people say profoundly shapes our workplace relationships, the decisions we make, the ideas we implement, and our resilience in the face of setbacks. From presidents addressing national tragedies to decision-makers trying to reduce organizational friction, I examine why our communication often unintentionally backfires, revealing paradoxes in what we think works (and what actually does), and identifying concrete behaviors we can take to overcome – and to connect amidst – adversity.
-
-</span>
