@@ -17,4 +17,9 @@
   width: 220px !important;       /* keep in sync with above */
   height: 220px !important;
 }
+/* Make all text inside the author profile widget solid black */
+.author .bio,
+.author .bio p {
+  color: #000 !important;
+}
 
