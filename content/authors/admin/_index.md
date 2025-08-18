@@ -3,10 +3,6 @@
 # Display name
 title: Daniel J. Chiacchia
 
-<img src="avatar.jpg"
-     width="220" height="220"
-     style="border-radius:50%; object-fit:cover;">
-
 # Full name (for SEO)
 first_name: Daniel J. 
 last_name: Chiacchia
