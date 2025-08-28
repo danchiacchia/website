@@ -41,28 +41,24 @@ profiles:
     url: https://osf.io/mspu4/
 
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Teaching Assistant
+    company_name: Leveraging Diverse Teams (with Dr. Marlys Christianson)
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2025-08-26
+    date_end: '2025-08-26'
+  - position: Teaching Assistant
+    company_name: Leading People in Organizations (with Dr. John Oesch)
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-09-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+  - position: Teaching Assistant
+    company_name: Power and Influence in Organizations (with Dr. John Oesch)
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2024-09-01
+    date_end: ''
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
