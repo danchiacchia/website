@@ -54,7 +54,7 @@ work:
     date_start: 2024-09-01
     date_end: ''
   - position: Teaching Assistant
-    company_name: Power and Influence in Organizations (with Dr. John Oesch)
+    company_name: Power and Influence in Organizations (with Dr. Tiziana Casciaro)
     company_url: ''
     company_logo: ''
     date_start: 2024-09-01
