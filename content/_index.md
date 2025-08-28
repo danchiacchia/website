@@ -60,7 +60,7 @@ sections:
     design:
       view: article-grid
       columns: 3
-    - block: resume-experience
+  - block: resume-experience
     content:
       username: admin
     design:
