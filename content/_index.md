@@ -68,6 +68,7 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+      columns: 3
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
