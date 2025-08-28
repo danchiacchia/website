@@ -11,6 +11,6 @@ main:
     url: /
     weight: 11
   - name: Teaching
-    url: teaching/
+    url: experience/
     weight: 12
 
