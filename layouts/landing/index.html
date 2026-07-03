@@ -221,7 +221,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
         <span>Center for Leadership in the Future of Work</span>
         <span>University of Zürich</span>
       </p>
-      <p class="tagline reveal">I study how people communicate during life's <em>most difficult moments</em> — and why our words so often backfire exactly when we need them to work.</p>
+      <p class="tagline reveal">I study how people communicate during life's <em>most difficult moments</em> — and why our words so often backfire exactly when we need them most.</p>
       <div class="hero-ctas reveal">
         <a class="btn btn-solid" href="#featured">Explore the research</a>
         <a class="btn btn-ghost" href="https://danchiacchia.github.io/website/uploads/resume.pdf">Download CV</a>
@@ -261,7 +261,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
           <p class="verdict" id="verdict"><strong>Most consolers instinctively reach for Option A</strong> — but this research finds validation (Option B) is what grievers typically need: a message that makes them feel understood. The nuance: when a loss threatens <em>esteem</em> — like losing a job — the pattern flips, and positive reframing becomes the more effective strategy.</p>
         </div>
         <div class="featured-links" style="margin-top:26px">
-          <a class="btn btn-solid" href="https://danchiacchia.github.io/website/publication/journal-article/sympathy/">Project details</a>
+          <a class="btn btn-solid" href="https://danchiacchia.github.io/website/uploads/Chiacchia_et_al_Sympathy_Working_Paper.pdf">Read the working paper</a>
         </div>
       </div>
     </div>
@@ -281,10 +281,23 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
         <p class="sec-kicker">Featured research</p>
         <h2>Lay theories of decision conflict and the role of the true self</h2>
         <p class="desc">“My head says yes, but my heart says no.” When reason and emotion pull in different directions, how do people make sense of the conflict — and which side do they believe speaks for who they really are?</p>
-        <p class="pull">Which voice do we treat as the true self — the head, or the heart?</p>
-        <div class="featured-links">
+        <div class="fieldtest">
+          <h3>Which one is the true self?</h3>
+          <p class="scenario">A colleague is conflicted about AI in the workplace. Their head points toward being pro-AI — but their automatic gut reaction is against it. Deep down, which do they truly prefer?</p>
+          <div class="choices">
+            <button class="choice ts-choice" type="button">
+              <span class="say">Their head — deep down, they're truly pro-AI.</span>
+              <span class="tag">Option A — the head speaks for the true self</span>
+            </button>
+            <button class="choice ts-choice" type="button">
+              <span class="say">Their gut — deep down, they're truly anti-AI.</span>
+              <span class="tag">Option B — the heart speaks for the true self</span>
+            </button>
+          </div>
+          <p class="verdict" id="ts-verdict"><strong>Here's the catch: your answer says as much about you as about them.</strong> This research finds that judgments of the true self are motivated — people locate another person's "true" preference on whichever side aligns with what they themselves believe is good or right. The true self is seen through an evaluative lens, not a neutral one.</p>
+        </div>
+        <div class="featured-links" style="margin-top:26px">
           <a class="btn btn-solid" href="https://danchiacchia.github.io/website/publication/published/LayTheoriesofDecisionConflictFinal.pdf">Read the paper</a>
-          <a class="btn btn-ghost" href="https://doi.org/10.1037/pspa0000465">DOI</a>
         </div>
         <p class="cite">Chiacchia, D. J., Newman, G. E., &amp; Ruttan, R. L. (2025). The head, heart, and soul: Lay theories of decision conflict and the role of the true self. <em>Journal of Personality and Social Psychology, 129</em>(6), 1083–1101.</p>
       </div>
@@ -384,12 +397,21 @@ const obs = new IntersectionObserver(entries => {
 }, {threshold:.12});
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-/* field test */
-const choices = document.querySelectorAll('.choice');
-choices.forEach(btn => btn.addEventListener('click', () => {
+/* field test: sympathy (has a better/worse answer) */
+const sympChoices = document.querySelectorAll('.choice[data-kind]');
+sympChoices.forEach(btn => btn.addEventListener('click', () => {
   if (document.getElementById('verdict').classList.contains('show')) return;
-  choices.forEach(c => { c.classList.add('revealed', c.dataset.kind); c.disabled = true; });
+  sympChoices.forEach(c => { c.classList.add('revealed', c.dataset.kind); c.disabled = true; });
   document.getElementById('verdict').classList.add('show');
+}));
+
+/* field test: true self (no right answer — the reveal is the point) */
+const tsChoices = document.querySelectorAll('.ts-choice');
+tsChoices.forEach(btn => btn.addEventListener('click', () => {
+  if (document.getElementById('ts-verdict').classList.contains('show')) return;
+  btn.classList.add('revealed', 'better');
+  tsChoices.forEach(c => { c.classList.add('revealed'); c.disabled = true; });
+  document.getElementById('ts-verdict').classList.add('show');
 }));
 
 /* cursor-reactive pixel field in hero */
@@ -460,4 +482,3 @@ choices.forEach(btn => btn.addEventListener('click', () => {
 </script>
 </body>
 </html>
-
