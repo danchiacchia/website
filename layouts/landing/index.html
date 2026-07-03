@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniel J. Chiacchia — Rotman School of Management</title>
-<meta name="description" content="Daniel J. Chiacchia studies how people communicate during difficult, emotionally salient events. PhD Candidate at the Rotman School of Management, University of Toronto.">
-<meta property="og:title" content="Daniel J. Chiacchia">
+<title>Daniel J. Chiacchia, PhD — University of Zürich</title>
+<meta name="description" content="Daniel J. Chiacchia, PhD, is a Postdoctoral Research Associate at the Center for Leadership in the Future of Work, University of Zürich. He studies how people communicate during difficult, emotionally salient events.">
+<meta property="og:title" content="Daniel J. Chiacchia, PhD">
 <meta property="og:description" content="Studying how people communicate during life's most difficult moments — and why our words so often backfire.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
   --accent-dark:#312E81;
   --grad:linear-gradient(115deg,#DDE3FF 0%,#F3D9F4 45%,#FFE9D6 100%);
   --grad-dark:linear-gradient(115deg,#181C4D 0%,#3A2160 55%,#5C2A4A 100%);
+  --grad-teal:linear-gradient(115deg,#0F3B3A 0%,#14524E 55%,#2E6653 100%);
   --card-border:#E8E9F2;
   --max:1120px;
   --radius:18px;
@@ -40,10 +41,10 @@ a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
 
-/* buttons */
 .btn{
   display:inline-block;font-weight:600;font-size:1rem;text-decoration:none;
   padding:15px 30px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;
+  border:none;cursor:pointer;font-family:inherit;
 }
 .btn:hover{transform:translateY(-2px)}
 .btn-solid{background:var(--ink);color:#fff}
@@ -53,7 +54,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .btn-light{background:#fff;color:var(--ink)}
 .btn-light:hover{box-shadow:0 10px 26px rgba(0,0,0,.28)}
 
-/* reveal on scroll */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
 .reveal.in{opacity:1;transform:none}
 
@@ -72,41 +72,68 @@ header{
 
 /* ===== hero ===== */
 .hero{background:var(--grad);position:relative;overflow:hidden}
-.hero::after{
-  content:"";position:absolute;inset:auto -10% -55% -10%;height:70%;
-  background:radial-gradient(closest-side,rgba(255,255,255,.85),transparent);
-  pointer-events:none;
-}
-.hero-inner{position:relative;padding:110px 28px 130px;max-width:var(--max);margin:0 auto;text-align:center}
-.hero h1{font-size:clamp(2.7rem,6.5vw,4.6rem);font-weight:800;max-width:15em;margin:0 auto}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),#A62F80);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:38em;margin:26px auto 0;color:var(--ink-soft);font-weight:500}
-.hero-ctas{margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.hero-kicker{font-weight:600;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:22px}
+#px{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:100px 28px 120px;max-width:var(--max);margin:0 auto;text-align:center;pointer-events:none}
+.hero-inner a{pointer-events:auto}
+.hero h1{font-size:clamp(2.6rem,6vw,4.3rem);font-weight:800}
+.hero .role{margin-top:20px;font-weight:600;font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.5;color:var(--accent-dark)}
+.hero .role span{display:block}
+.hero .tagline{font-size:clamp(1.05rem,2vw,1.2rem);max-width:36em;margin:26px auto 0;color:var(--ink-soft);font-weight:500}
+.hero .tagline em{font-style:normal;background:linear-gradient(90deg,var(--accent),#A62F80);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+.hero-ctas{margin-top:38px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* ===== featured paper ===== */
-.featured{padding:110px 0}
+/* ===== featured papers ===== */
+.featured{padding:100px 0}
+.featured+.featured{padding-top:0}
 .featured-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:center}
+.featured-grid.flip .fig{order:2}
 .journal-card{
-  background:var(--grad-dark);border-radius:var(--radius);aspect-ratio:3/4;max-width:360px;
+  border-radius:var(--radius);aspect-ratio:3/4;max-width:360px;
   color:#fff;padding:34px;display:flex;flex-direction:column;justify-content:space-between;
   box-shadow:0 30px 60px rgba(24,28,77,.35);transform:rotate(-2deg);transition:transform .3s;
   margin:0 auto;
 }
+.journal-card.dark{background:var(--grad-dark)}
+.journal-card.teal{background:var(--grad-teal);transform:rotate(2deg)}
 .journal-card:hover{transform:rotate(0deg) scale(1.02)}
 .journal-card .jname{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-weight:600}
-.journal-card h3{font-size:1.7rem;font-weight:700;line-height:1.15}
+.journal-card h3{font-size:1.65rem;font-weight:700;line-height:1.15}
 .journal-card .authors{font-size:.9rem;opacity:.85}
 .sec-kicker{font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-.featured h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:20px}
-.featured .desc{color:var(--ink-soft);font-size:1.1rem;max-width:34em}
-.pull{border-left:4px solid var(--accent);padding:6px 0 6px 22px;margin:28px 0;font-family:'Bricolage Grotesque',sans-serif;font-size:1.25rem;font-weight:600;line-height:1.4}
-.featured-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.featured h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;margin-bottom:20px}
+.featured .desc{color:var(--ink-soft);font-size:1.08rem;max-width:36em}
+.featured .desc+.desc{margin-top:.9em}
+.pull{border-left:4px solid var(--accent);padding:6px 0 6px 22px;margin:26px 0;font-family:'Bricolage Grotesque',sans-serif;font-size:1.2rem;font-weight:600;line-height:1.4}
+.featured-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;align-items:center}
+.cite{font-size:.85rem;color:var(--ink-soft);margin-top:22px;max-width:40em}
+.badge{
+  display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 14px;border-radius:999px;background:#EEF0FF;color:var(--accent-dark);margin-bottom:16px;
+}
+
+/* ===== field test ===== */
+.fieldtest{background:#F7F7FB;border:1px solid var(--card-border);border-radius:var(--radius);padding:34px 32px;margin-top:34px}
+.fieldtest h3{font-size:1.35rem;font-weight:700;margin-bottom:6px}
+.fieldtest .scenario{color:var(--ink-soft);font-size:.98rem}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.choice{
+  text-align:left;background:#fff;border:1.5px solid var(--card-border);border-radius:14px;
+  padding:18px 20px;font:inherit;cursor:pointer;transition:border-color .2s,transform .2s;color:var(--ink);
+}
+.choice:hover{border-color:var(--ink);transform:translateY(-2px)}
+.choice .say{font-weight:600;font-size:1.02rem;line-height:1.45;display:block}
+.choice .tag{display:block;margin-top:10px;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
+.choice.revealed{cursor:default;transform:none}
+.choice.revealed.better{border-color:var(--accent);box-shadow:0 0 0 1.5px var(--accent)}
+.choice.revealed.worse{opacity:.65}
+.verdict{display:none;margin-top:18px;font-size:.95rem;color:var(--ink-soft)}
+.verdict.show{display:block}
+.verdict strong{color:var(--ink)}
 
 /* ===== research streams ===== */
-.streams{background:#F7F7FB;padding:110px 0}
-.streams h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;text-align:center;max-width:20em;margin:0 auto 18px}
-.streams .lead{text-align:center;color:var(--ink-soft);max-width:44em;margin:0 auto 60px;font-size:1.1rem}
+.streams{background:#F7F7FB;padding:100px 0}
+.streams h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;text-align:center;max-width:20em;margin:0 auto 18px}
+.streams .lead{text-align:center;color:var(--ink-soft);max-width:44em;margin:0 auto 56px;font-size:1.05rem}
 .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .card{
   background:#fff;border:1px solid var(--card-border);border-radius:var(--radius);
@@ -118,39 +145,23 @@ header{
   display:flex;align-items:center;justify-content:center;
   font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--accent-dark);
 }
-.card h3{font-size:1.35rem;font-weight:700}
-.card p{color:var(--ink-soft);font-size:.98rem;flex:1}
+.card h3{font-size:1.3rem;font-weight:700}
+.card .status{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card p{color:var(--ink-soft);font-size:.96rem;flex:1}
 .card a{font-weight:600;text-decoration:none}
 .card a:hover{text-decoration:underline}
 
-/* ===== what's new ===== */
-.news{padding:110px 0}
-.news h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:50px}
-.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.news-card{
-  border:1px solid var(--card-border);border-radius:var(--radius);padding:28px;
-  text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:12px;
-  transition:transform .25s,box-shadow .25s;background:#fff;
-}
-.news-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(20,23,43,.1)}
-.news-tag{
-  align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  padding:5px 12px;border-radius:999px;background:#EEF0FF;color:var(--accent-dark);
-}
-.news-card h3{font-size:1.15rem;font-weight:700;line-height:1.3}
-.news-card p{color:var(--ink-soft);font-size:.92rem}
-.news-card .go{margin-top:auto;font-weight:600;color:var(--accent)}
-
 /* ===== about ===== */
-.about{background:var(--grad-dark);color:#fff;padding:110px 0}
-.about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:center}
+.about{background:var(--grad-dark);color:#fff;padding:100px 0}
+.about-grid{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:64px;align-items:center}
+.about .fig{display:flex;justify-content:flex-start}
 .about img{
-  width:100%;max-width:380px;border-radius:var(--radius);display:block;margin:0 auto;
+  width:100%;max-width:330px;height:auto;border-radius:var(--radius);display:block;
   box-shadow:0 30px 60px rgba(0,0,0,.4);
 }
 .about .sec-kicker{color:#F3D9F4}
-.about h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:20px}
-.about p{color:rgba(255,255,255,.85);max-width:36em}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;margin-bottom:20px}
+.about p{color:rgba(255,255,255,.85);max-width:38em}
 .about p+p{margin-top:1em}
 .about .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .chip{
@@ -160,9 +171,9 @@ header{
 .about .btn{margin-top:32px}
 
 /* ===== contact band ===== */
-.contact{background:var(--grad);padding:120px 0;text-align:center}
-.contact h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;max-width:16em;margin:0 auto 18px}
-.contact p{color:var(--ink-soft);font-size:1.15rem;max-width:34em;margin:0 auto 40px;font-weight:500}
+.contact{background:var(--grad);padding:110px 0;text-align:center}
+.contact h2{font-size:clamp(2rem,4.6vw,3.3rem);font-weight:800;max-width:16em;margin:0 auto 18px}
+.contact p{color:var(--ink-soft);font-size:1.1rem;max-width:34em;margin:0 auto 38px;font-weight:500}
 
 /* ===== footer ===== */
 footer{background:var(--ink);color:#fff;padding:70px 0 40px}
@@ -176,9 +187,11 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 
 @media (max-width:900px){
   .featured-grid,.about-grid,.foot-grid{grid-template-columns:1fr;gap:44px}
-  .card-grid,.news-grid{grid-template-columns:1fr}
-  .hero-inner{padding:80px 28px 100px}
-  .journal-card{transform:none}
+  .featured-grid.flip .fig{order:0}
+  .card-grid{grid-template-columns:1fr}
+  .choices{grid-template-columns:1fr}
+  .hero-inner{padding:76px 28px 96px}
+  .journal-card,.journal-card.teal{transform:none}
 }
 </style>
 </head>
@@ -186,13 +199,12 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 
 <header>
   <nav class="nav" aria-label="Primary">
-    <a class="brand" href="#top">Daniel J. Chiacchia</a>
+    <a class="brand" href="#top">Daniel J. Chiacchia, PhD</a>
     <ul class="nav-links">
       <li><a href="#featured">Research</a></li>
-      <li><a href="#news">What's New</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="https://danchiacchia.github.io/website/uploads/resume.pdf">CV</a></li>
-      <li><a class="nav-cta" href="mailto:daniel.chiacchia@rotman.utoronto.ca">Contact Daniel</a></li>
+      <li><a class="nav-cta" href="mailto:daniel.chiacchia@business.uzh.ch">Contact Daniel</a></li>
     </ul>
   </nav>
 </header>
@@ -200,11 +212,16 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 <main id="top">
 
   <!-- ===== Hero ===== -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <canvas id="px" aria-hidden="true"></canvas>
     <div class="hero-inner">
-      <p class="hero-kicker reveal">Communication · Emotions · Organizations</p>
-      <h1 class="reveal">What we say <em>when it matters most</em></h1>
-      <p class="reveal">I study how people communicate during life's most difficult moments — and why our words so often backfire exactly when we need them to work. PhD Candidate at the Rotman School of Management, University of Toronto.</p>
+      <h1 class="reveal">Daniel J. Chiacchia, PhD</h1>
+      <p class="role reveal">
+        <span>Postdoctoral Research Associate</span>
+        <span>Center for Leadership in the Future of Work</span>
+        <span>University of Zürich</span>
+      </p>
+      <p class="tagline reveal">I study how people communicate during life's <em>most difficult moments</em> — and why our words so often backfire exactly when we need them to work.</p>
       <div class="hero-ctas reveal">
         <a class="btn btn-solid" href="#featured">Explore the research</a>
         <a class="btn btn-ghost" href="https://danchiacchia.github.io/website/uploads/resume.pdf">Download CV</a>
@@ -212,14 +229,52 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
     </div>
   </section>
 
-  <!-- ===== Featured paper ===== -->
+  <!-- ===== Featured paper 1: sympathy / dissertation ===== -->
   <section class="featured" id="featured">
     <div class="wrap featured-grid">
+      <div class="fig reveal">
+        <div class="journal-card teal">
+          <span class="jname">Working Paper · Dissertation</span>
+          <h3>What Do You Need to Hear?</h3>
+          <p class="authors">Chiacchia · Ruttan · DeCelles · Jun · Newman<br>In prep for OBHDP</p>
+        </div>
+      </div>
       <div class="reveal">
-        <div class="journal-card">
+        <span class="badge">Finalist · Blake Ashforth Best Dissertation-Based Paper, AOM 2026</span>
+        <p class="sec-kicker">Featured research</p>
+        <h2>(Mis)alignment in sympathy expressions</h2>
+        <p class="desc">Grief is a prevalent, consequential, and underexamined experience in organizational life — yet people often don't know what to say when someone is grieving. This research reveals a paradox: sympathizers systematically prioritize positively reframing a griever's experience over validating it, even when doing so undermines the very goal they're trying to accomplish. Reframing backfires because it's misaligned with what grievers need — to feel understood.</p>
+        <p class="desc">But it doesn't always backfire: when a loss thwarts the need for esteem (like losing a job), positive reframing becomes the more effective strategy. Evidence spans an archival analysis of 600+ sympathy cards, surveys of 1,000+ consolers (including 150+ medical professionals), and three experiments with 1,500+ active grievers.</p>
+        <div class="fieldtest">
+          <h3>What would you say?</h3>
+          <p class="scenario">A colleague returns to work after losing a parent. You want to say something supportive. Which lands better?</p>
+          <div class="choices">
+            <button class="choice" type="button" data-kind="worse">
+              <span class="say">“Try to focus on the good times — they'd want you to stay positive.”</span>
+              <span class="tag">Option A — reframe the loss</span>
+            </button>
+            <button class="choice" type="button" data-kind="better">
+              <span class="say">“I'm so sorry. Losing a parent is devastating — whatever you're feeling right now is okay.”</span>
+              <span class="tag">Option B — validate the loss</span>
+            </button>
+          </div>
+          <p class="verdict" id="verdict"><strong>Most consolers instinctively reach for Option A</strong> — but this research finds validation (Option B) is what grievers typically need: a message that makes them feel understood. The nuance: when a loss threatens <em>esteem</em> — like losing a job — the pattern flips, and positive reframing becomes the more effective strategy.</p>
+        </div>
+        <div class="featured-links" style="margin-top:26px">
+          <a class="btn btn-solid" href="https://danchiacchia.github.io/website/publication/journal-article/sympathy/">Project details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured paper 2: JPSP ===== -->
+  <section class="featured">
+    <div class="wrap featured-grid flip">
+      <div class="fig reveal">
+        <div class="journal-card dark">
           <span class="jname">Journal of Personality<br>and Social Psychology</span>
           <h3>The Head, Heart, and Soul</h3>
-          <p class="authors">Chiacchia · Newman · Ruttan<br>Forthcoming, 2025</p>
+          <p class="authors">Chiacchia · Newman · Ruttan<br>2025 · 129(6), 1083–1101</p>
         </div>
       </div>
       <div class="reveal">
@@ -229,8 +284,9 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
         <p class="pull">Which voice do we treat as the true self — the head, or the heart?</p>
         <div class="featured-links">
           <a class="btn btn-solid" href="https://danchiacchia.github.io/website/publication/published/LayTheoriesofDecisionConflictFinal.pdf">Read the paper</a>
-          <a class="btn btn-ghost" href="https://danchiacchia.github.io/website/publication/published/">Details &amp; citation</a>
+          <a class="btn btn-ghost" href="https://doi.org/10.1037/pspa0000465">DOI</a>
         </div>
+        <p class="cite">Chiacchia, D. J., Newman, G. E., &amp; Ruttan, R. L. (2025). The head, heart, and soul: Lay theories of decision conflict and the role of the true self. <em>Journal of Personality and Social Psychology, 129</em>(6), 1083–1101.</p>
       </div>
     </div>
   </section>
@@ -243,19 +299,21 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <div class="card-grid">
         <div class="card reveal">
           <span class="num">01</span>
-          <h3>Sympathy &amp; silver linings</h3>
-          <p>When comforting others, we instinctively reach for the bright side. This work examines why silver-lining sympathy — despite the best intentions — can make support feel less effective than acknowledging the loss itself.</p>
-          <a href="https://danchiacchia.github.io/website/publication/journal-article/sympathy/">View project →</a>
+          <span class="status">Under review · JPSP</span>
+          <h3>Experiential authority</h3>
+          <p>Why do people seek advice from those with direct experience? This work examines how we understand — and sometimes overvalue — the authority that comes from having lived it.</p>
         </div>
         <div class="card reveal">
           <span class="num">02</span>
+          <span class="status">Data collection · Target: AMJ</span>
           <h3>Leader messages of resilience</h3>
           <p>From national tragedies to organizational crises, leaders are expected to project strength. When do messages of resilience steady an audience — and when do they ring hollow?</p>
           <a href="https://danchiacchia.github.io/website/publication/journal-article/resilience/">View project →</a>
         </div>
         <div class="card reveal">
           <span class="num">03</span>
-          <h3>Communicating creative ideas</h3>
+          <span class="status">Data collection · Target: Org Science</span>
+          <h3>The simplicity paradox</h3>
           <p>Great ideas can die in the telling. This work examines how the way people communicate and evaluate creative ideas determines which ones actually get implemented.</p>
           <a href="https://danchiacchia.github.io/website/publication/journal-article/simplicity/">View project →</a>
         </div>
@@ -263,44 +321,16 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
     </div>
   </section>
 
-  <!-- ===== What's new ===== -->
-  <section class="news" id="news">
-    <div class="wrap">
-      <p class="sec-kicker reveal">Updates</p>
-      <h2 class="reveal">What's new?</h2>
-      <div class="news-grid">
-        <a class="news-card reveal" href="https://danchiacchia.github.io/website/publication/published/">
-          <span class="news-tag">Publication</span>
-          <h3>“The Head, Heart, and Soul” forthcoming in JPSP</h3>
-          <p>With George E. Newman and Rachel L. Ruttan — Journal of Personality and Social Psychology.</p>
-          <span class="go">Read more →</span>
-        </a>
-        <a class="news-card reveal" href="https://osf.io/mspu4/">
-          <span class="news-tag">Open science</span>
-          <h3>Data, code &amp; stimuli on OSF</h3>
-          <p>Pre-registrations, materials, and replication packages for ongoing and published projects.</p>
-          <span class="go">Visit OSF →</span>
-        </a>
-        <a class="news-card reveal" href="https://scholar.google.com/citations?user=IxM7NtMAAAAJ&hl=en">
-          <span class="news-tag">Profile</span>
-          <h3>Follow new work on Google Scholar</h3>
-          <p>Working papers on sympathy, resilience messaging, and creative idea evaluation are in progress.</p>
-          <span class="go">View profile →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== About ===== -->
   <section class="about" id="about">
     <div class="wrap about-grid">
-      <div class="reveal">
-        <img src="media/daniel.jpg" alt="Daniel J. Chiacchia" width="815" height="900">
+      <div class="fig reveal">
+        <img src="media/daniel.jpg" alt="Daniel J. Chiacchia">
       </div>
       <div class="reveal">
         <p class="sec-kicker">About Daniel</p>
         <h2>Multi-method research on communication in hard moments</h2>
-        <p>Daniel J. Chiacchia is a PhD Candidate in Organizational Behaviour and HR Management at the Rotman School of Management, University of Toronto. Drawing on social psychological and micro-organizational behavior theory, his research examines the role of emotions, norms, and authenticity in how we communicate through adversity — with implications spanning organizational behavior, psychology, marketing, communication, and health.</p>
+        <p>Daniel J. Chiacchia is a Postdoctoral Research Associate at the Center for Leadership in the Future of Work, University of Zürich. He received his PhD in Organizational Behaviour and Human Resource Management at the Rotman School of Management, University of Toronto. Drawing on social psychological and micro-organizational behavior theory, his research examines the role of emotions, norms, and authenticity in how we communicate through adversity — with implications spanning organizational behavior, psychology, marketing, communication, and health.</p>
         <p>His multi-method approach combines qualitative interviews, lab and field experiments, archival analyses, and psychometric natural language processing to capture nuanced expression at scale. He is committed to open science: pre-registering studies, powering experiments appropriately, internally replicating effects, and making data, code, and stimuli publicly available.</p>
         <div class="chips">
           <span class="chip">Interviews</span>
@@ -309,7 +339,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
           <span class="chip">NLP</span>
           <span class="chip">Open science</span>
         </div>
-        <a class="btn btn-light" href="https://www.rotman.utoronto.ca/faculty-and-research/academic-areas/organizational-behaviour-and-human-resource-management/">Rotman OBHRM →</a>
+        <a class="btn btn-light" href="https://www.leadthefuture.org/">Center for Leadership in the Future of Work →</a>
       </div>
     </div>
   </section>
@@ -320,7 +350,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <h2 class="reveal">Working on something where the words matter?</h2>
       <p class="reveal">For research collaborations, speaking, or media inquiries — get in touch.</p>
       <div class="reveal">
-        <a class="btn btn-solid" href="mailto:daniel.chiacchia@rotman.utoronto.ca">Contact Daniel →</a>
+        <a class="btn btn-solid" href="mailto:daniel.chiacchia@business.uzh.ch">Contact Daniel →</a>
       </div>
     </div>
   </section>
@@ -330,13 +360,13 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <h3>Daniel J. Chiacchia</h3>
-      <p>PhD Candidate, Organizational Behaviour &amp; HR Management<br>
-      Joseph L. Rotman School of Management<br>
-      University of Toronto</p>
+      <h3>Daniel J. Chiacchia, PhD</h3>
+      <p>Postdoctoral Research Associate<br>
+      Center for Leadership in the Future of Work<br>
+      University of Zürich</p>
     </div>
     <ul class="foot-links">
-      <li><a href="mailto:daniel.chiacchia@rotman.utoronto.ca">daniel.chiacchia@rotman.utoronto.ca</a></li>
+      <li><a href="mailto:daniel.chiacchia@business.uzh.ch">daniel.chiacchia@business.uzh.ch</a></li>
       <li><a href="https://scholar.google.com/citations?user=IxM7NtMAAAAJ&hl=en">Google Scholar</a></li>
       <li><a href="https://osf.io/mspu4/">OSF</a></li>
       <li><a href="https://www.linkedin.com/in/daniel-chiacchia-184b93140/">LinkedIn</a></li>
@@ -348,11 +378,85 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 </footer>
 
 <script>
+/* reveal on scroll */
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
 }, {threshold:.12});
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* field test */
+const choices = document.querySelectorAll('.choice');
+choices.forEach(btn => btn.addEventListener('click', () => {
+  if (document.getElementById('verdict').classList.contains('show')) return;
+  choices.forEach(c => { c.classList.add('revealed', c.dataset.kind); c.disabled = true; });
+  document.getElementById('verdict').classList.add('show');
+}));
+
+/* cursor-reactive pixel field in hero */
+(function(){
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hero = document.getElementById('hero');
+  const canvas = document.getElementById('px');
+  if (reduced || !canvas || !hero) return;
+  const ctx = canvas.getContext('2d');
+  const CELL = 26, RADIUS = 110;
+  const PALETTE = [[67,56,202],[166,47,128],[194,120,3],[49,46,129]];
+  let cols=0, rows=0, cells=null, hues=null, dpr=1, running=false, raf=null;
+  let px=-9999, py=-9999;
+
+  function resize(){
+    dpr = Math.min(window.devicePixelRatio||1, 2);
+    const r = hero.getBoundingClientRect();
+    canvas.width = r.width*dpr; canvas.height = r.height*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    cols = Math.ceil(r.width/CELL); rows = Math.ceil(r.height/CELL);
+    cells = new Float32Array(cols*rows);
+    hues = new Uint8Array(cols*rows);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  hero.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect();
+    px = e.clientX - r.left; py = e.clientY - r.top;
+    // energize cells near the pointer
+    const c0=Math.max(0,Math.floor((px-RADIUS)/CELL)), c1=Math.min(cols-1,Math.floor((px+RADIUS)/CELL));
+    const r0=Math.max(0,Math.floor((py-RADIUS)/CELL)), r1=Math.min(rows-1,Math.floor((py+RADIUS)/CELL));
+    for(let cy=r0;cy<=r1;cy++){
+      for(let cx=c0;cx<=c1;cx++){
+        const dx=cx*CELL+CELL/2-px, dy=cy*CELL+CELL/2-py;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<RADIUS){
+          const idx=cy*cols+cx;
+          const v=1-d/RADIUS;
+          if(v>cells[idx]){
+            cells[idx]=v;
+            if(!hues[idx]) hues[idx]=1+Math.floor(Math.random()*PALETTE.length);
+          }
+        }
+      }
+    }
+    if(!running){ running=true; raf=requestAnimationFrame(tick); }
+  });
+  hero.addEventListener('pointerleave', () => { px=-9999; py=-9999; });
+
+  function tick(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive=false;
+    for(let i=0;i<cells.length;i++){
+      let v=cells[i];
+      if(v<=0.012){ cells[i]=0; hues[i]=0; continue; }
+      alive=true;
+      cells[i]=v*0.955;
+      const col=PALETTE[hues[i]-1];
+      const cx=(i%cols)*CELL, cy=Math.floor(i/cols)*CELL;
+      const inset=2+(1-v)*5;
+      ctx.fillStyle='rgba('+col[0]+','+col[1]+','+col[2]+','+(v*0.30).toFixed(3)+')';
+      ctx.fillRect(cx+inset, cy+inset, CELL-inset*2, CELL-inset*2);
+    }
+    if(alive){ raf=requestAnimationFrame(tick); } else { running=false; }
+  }
+})();
 </script>
 </body>
 </html>
-
